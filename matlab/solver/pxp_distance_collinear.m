@@ -6,6 +6,5 @@ d23n12 = norm(P2 - P3) * abs(n1(1) - n2(1));
 
 base = d13 / norm(d12n23 * n1 - d23n12 * n3);
 
-x(1) = d12n23 * base;
-x(2) = d23n12 * base;
+x = [d12n23; d23n12] * base;
 end
