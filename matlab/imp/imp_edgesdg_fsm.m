@@ -8,7 +8,7 @@ edges = zeros(1, points);
 state = 0;
 index = 0;
 
-for col = roistart:width
+for col = roistart:(width - 1)
     data = line(col);
     
     switch (state)
