@@ -10,10 +10,18 @@ BD of the 10-point solver implementation.
 
 IP used by the pxp BD. Computes depths from 5 collinear points.
 
+## autodetect.tcl
+
+BD of the pattern detector.
+
 ## pxp_hw_test.tcl
 
 BD of the test design used to evaluate the numerical accuracy of the 10-point solver implementation.
 
-## pxp_axi_slave.vhd
+## pxp_axi_slave
 
 VHDL module used by the pxp_hw_test BD. Used to pass calibration and precaptured measurement data to the 10-point solver via memory mapped I/O.
+
+## ds_i2c_chain
+
+VHDL module for camera scanline synchronization.
