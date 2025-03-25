@@ -57,7 +57,7 @@ for monomial = list_X
     coefficients(base - d) = monomial / (X ^ d);
 end
 
-X_solutions = roots(coefficients);
+X_solutions = roots(eval(coefficients));
 
 N = numel(X_solutions);
 
